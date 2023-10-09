@@ -1,0 +1,2023 @@
+{
+	"info": {
+		"_postman_id": "4bba81e9-1305-4417-af30-732ca4c5363c",
+		"name": "Persona Api Request",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30236394"
+	},
+	"item": [
+		{
+			"name": "Personas",
+			"item": [
+				{
+					"name": "Get all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/v1/personas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"personas"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get all",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/v1/personas",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"v1",
+										"personas"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 08 Oct 2023 22:43:15 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"nombre\": \"Roman\",\n        \"apellido\": \"Riquelme\",\n        \"dni\": 13690470,\n        \"domicilio\": null,\n        \"libros\": []\n    },\n    {\n        \"id\": 2,\n        \"nombre\": \"Lucas\",\n        \"apellido\": \"Pratto\",\n        \"dni\": 17421523,\n        \"domicilio\": null,\n        \"libros\": []\n    }\n]"
+						},
+						{
+							"name": "Get all2",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/v1/personas",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"v1",
+										"personas"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 08 Oct 2023 23:34:43 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"nombre\": \"Lucas\",\n        \"apellido\": \"Pratto\",\n        \"dni\": 17421523,\n        \"domicilio\": {\n            \"id\": 1,\n            \"calle\": \"Catamarca\",\n            \"numero\": 232,\n            \"localidad\": {\n                \"id\": 2,\n                \"denominacion\": \"El vergel \"\n            }\n        },\n        \"libros\": [\n            {\n                \"id\": 1,\n                \"titulo\": \"Los dias del venado\",\n                \"fecha\": \"1970-01-01T00:00:02.012+00:00\",\n                \"genero\": \"Fantastico\",\n                \"paginas\": 500,\n                \"autores\": [\n                    {\n                        \"id\": 2,\n                        \"nombre\": \"Paula\",\n                        \"apellido\": \"Rodriguez\",\n                        \"biografia\": \"Biografia de Romper Corazones\"\n                    }\n                ]\n            }\n        ]\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get one",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/v1/personas/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"personas",
+								"5"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get one",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/v1/personas/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"v1",
+										"personas",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 08 Oct 2023 22:42:30 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"nombre\": \"Lucas\",\n    \"apellido\": \"Pratto\",\n    \"dni\": 17421523,\n    \"domicilio\": null,\n    \"libros\": []\n}"
+						},
+						{
+							"name": "Get one2",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/v1/personas/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"v1",
+										"personas",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 08 Oct 2023 23:35:29 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"nombre\": \"Lucas\",\n    \"apellido\": \"Pratto\",\n    \"dni\": 17421523,\n    \"domicilio\": {\n        \"id\": 1,\n        \"calle\": \"Catamarca\",\n        \"numero\": 232,\n        \"localidad\": {\n            \"id\": 2,\n            \"denominacion\": \"El vergel \"\n        }\n    },\n    \"libros\": [\n        {\n            \"id\": 1,\n            \"titulo\": \"Los dias del venado\",\n            \"fecha\": \"1970-01-01T00:00:02.012+00:00\",\n            \"genero\": \"Fantastico\",\n            \"paginas\": 500,\n            \"autores\": [\n                {\n                    \"id\": 2,\n                    \"nombre\": \"Paula\",\n                    \"apellido\": \"Rodriguez\",\n                    \"biografia\": \"Biografia de Romper Corazones\"\n                }\n            ]\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \r\n        \"nombre\": \"Lucas\",\r\n        \"apellido\": \"Pratto\",\r\n        \"dni\": 17421523,\r\n        \"domicilio\": {\r\n            \"calle\": \"Catamarca\",\r\n            \"numero\": 232,\r\n            \"localidad\": {\r\n                \"id\": 1,\r\n                \"denominacion\": \"El vergel\"\r\n            }\r\n\r\n        },\r\n        \"libros\": [\r\n            {\r\n                \"titulo\": \"Los dias del venado\",\r\n                \"fecha\": 2012,\r\n                \"genero\": \"Fantastico\",\r\n                \"paginas\": 500,\r\n                \"autores\": [\r\n                    {\r\n                        \"id\":1,\r\n                        \"nombre\": \"Paula\",\r\n                        \"apellido\": \"Rodriguez\",\r\n                        \"biografia\": \"Biografia de romper corazones \"\r\n                    }\r\n                ]\r\n                            \r\n            }\r\n        ]\r\n    }"
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/v1/personas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"personas"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": " {\r\n        \r\n        \"nombre\": \"Lucas\",\r\n        \"apellido\": \"Pato\",\r\n        \"dni\": 17421523,\r\n        \"domicilio\": null,\r\n        \"libros\": []\r\n    }"
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/v1/personas",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"v1",
+										"personas"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 04 Oct 2023 19:28:48 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"nombre\": \"Lucas\",\n    \"apellido\": \"Pato\",\n    \"dni\": 17421523,\n    \"domicilio\": null,\n    \"libros\": []\n}"
+						},
+						{
+							"name": "Create2",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": " {\r\n        \r\n        \"nombre\": \"Lucas\",\r\n        \"apellido\": \"Pratto\",\r\n        \"dni\": 17421523,\r\n        \"domicilio\": {\r\n            \"calle\": \"Catamarca\",\r\n            \"numero\": 232,\r\n            \"localidad\": {\r\n                \r\n                \"denominacion\": \"El vergel\"\r\n            }\r\n\r\n        },\r\n        \"libros\": [\r\n            {\r\n                \"titulo\": \"Los dias del venado\",\r\n                \"fecha\": 2012,\r\n                \"genero\": \"Fantastico\",\r\n                \"paginas\": 500,\r\n                \"autores\": [\r\n                    {\r\n                        \r\n                        \"nombre\": \"Paula\",\r\n                        \"apellido\": \"Rodriguez\",\r\n                        \"biografia\": \"Biografia de romper corazones \"\r\n                    }\r\n                ]\r\n                            \r\n            }\r\n        ]\r\n    }"
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/v1/personas",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"v1",
+										"personas"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 08 Oct 2023 23:34:07 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n\n    \"nombre\": \"Lucas\",\n    \"apellido\": \"Pratto\",\n    \"dni\": 17421523,\n    \"domicilio\": {\n        \"id\": 1,\n        \"calle\": \"Catamarca\",\n        \"numero\": 232,\n        \"localidad\": {\n            \"id\": 2,\n            \"denominacion\": \"El vergel\"\n        }\n    },\n    \"libros\": [\n        {\n            \"id\": 1,\n            \"titulo\": \"Los dias del venado\",\n            \"fecha\": \"1970-01-01T00:00:02.012+00:00\",\n            \"genero\": \"Fantastico\",\n            \"paginas\": 500,\n            \"autores\": [\n                {\n                    \"id\": 2,\n                    \"nombre\": \"Paula\",\n                    \"apellido\": \"Rodriguez\",\n                    \"biografia\": \"Biografia de romper corazones \"\n                }\n            ]\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n {\r\n    \"id\": 1,\r\n    \"nombre\": \"Roberto\",\r\n    \"apellido\": \"Pratto\",\r\n    \"dni\": 17421523,\r\n    \"domicilio\": {\r\n        \"id\": 1,\r\n        \"calle\": \"Catamarca\",\r\n        \"numero\": 232,\r\n        \"localidad\": {\r\n            \"id\": 2,\r\n            \"denominacion\": \"El vergel \"\r\n        }\r\n    },\r\n    \"libros\": [\r\n        {\r\n            \"id\": 1,\r\n            \"titulo\": \"Los dias del venado\",\r\n            \"fecha\": \"1970-01-01T00:00:02.012+00:00\",\r\n            \"genero\": \"Fantastico\",\r\n            \"paginas\": 500,\r\n            \"autores\": [\r\n                {\r\n                    \"id\": 2,\r\n                    \"nombre\": \"Paula\",\r\n                    \"apellido\": \"Rodriguez\",\r\n                    \"biografia\": \"Biografia de Romper Corazones\"\r\n                }\r\n            ]\r\n        }\r\n    ]\r\n}\r\n"
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/v1/personas/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"personas",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"id\": 3,\r\n        \"nombre\": \" Didier\",\r\n        \"apellido\": \"Drogba\",\r\n        \"dni\": 18987654,\r\n        \"domicilio\": null,\r\n        \"libros\": []\r\n    }"
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/v1/personas/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"v1",
+										"personas",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 08 Oct 2023 22:47:07 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 3,\n    \"nombre\": \" Didier\",\n    \"apellido\": \"Drogba\",\n    \"dni\": 18987654,\n    \"domicilio\": null,\n    \"libros\": []\n}"
+						},
+						{
+							"name": "Update2",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "\r\n {\r\n    \"id\": 1,\r\n    \"nombre\": \"Roberto\",\r\n    \"apellido\": \"Pratto\",\r\n    \"dni\": 17421523,\r\n    \"domicilio\": {\r\n        \"id\": 1,\r\n        \"calle\": \"Catamarca\",\r\n        \"numero\": 232,\r\n        \"localidad\": {\r\n            \"id\": 2,\r\n            \"denominacion\": \"El vergel \"\r\n        }\r\n    },\r\n    \"libros\": [\r\n        {\r\n            \"id\": 1,\r\n            \"titulo\": \"Los dias del venado\",\r\n            \"fecha\": \"1970-01-01T00:00:02.012+00:00\",\r\n            \"genero\": \"Fantastico\",\r\n            \"paginas\": 500,\r\n            \"autores\": [\r\n                {\r\n                    \"id\": 2,\r\n                    \"nombre\": \"Paula\",\r\n                    \"apellido\": \"Rodriguez\",\r\n                    \"biografia\": \"Biografia de Romper Corazones\"\r\n                }\r\n            ]\r\n        }\r\n    ]\r\n}\r\n"
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/v1/personas/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"v1",
+										"personas",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 08 Oct 2023 23:37:21 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"nombre\": \"Roberto\",\n    \"apellido\": \"Pratto\",\n    \"dni\": 17421523,\n    \"domicilio\": {\n        \"id\": 1,\n        \"calle\": \"Catamarca\",\n        \"numero\": 232,\n        \"localidad\": {\n            \"id\": 2,\n            \"denominacion\": \"El vergel \"\n        }\n    },\n    \"libros\": [\n        {\n            \"id\": 1,\n            \"titulo\": \"Los dias del venado\",\n            \"fecha\": \"1970-01-01T00:00:02.012+00:00\",\n            \"genero\": \"Fantastico\",\n            \"paginas\": 500,\n            \"autores\": [\n                {\n                    \"id\": 2,\n                    \"nombre\": \"Paula\",\n                    \"apellido\": \"Rodriguez\",\n                    \"biografia\": \"Biografia de Romper Corazones\"\n                }\n            ]\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/v1/personas/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"personas",
+								"4"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/v1/personas/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"v1",
+										"personas",
+										"3"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 08 Oct 2023 22:48:21 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "SEACH",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/v1/personas/search?filtro=Lucas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"personas",
+								"search"
+							],
+							"query": [
+								{
+									"key": "filtro",
+									"value": "Lucas"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "search request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/v1/personas/search?filtro=Lucas",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"v1",
+										"personas",
+										"search"
+									],
+									"query": [
+										{
+											"key": "filtro",
+											"value": "Lucas"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 09 Oct 2023 01:16:21 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"nombre\": \"Lucas\",\n        \"apellido\": \"Pato\",\n        \"dni\": 17421523,\n        \"domicilio\": null,\n        \"libros\": []\n    },\n    {\n        \"id\": 4,\n        \"nombre\": \"Lucas\",\n        \"apellido\": \"Pratto\",\n        \"dni\": 17421523,\n        \"domicilio\": {\n            \"id\": 2,\n            \"calle\": \"Catamarca\",\n            \"numero\": 232,\n            \"localidad\": {\n                \"id\": 1,\n                \"denominacion\": \"El vergel \"\n            }\n        },\n        \"libros\": [\n            {\n                \"id\": 3,\n                \"titulo\": \"Los dias del venado\",\n                \"fecha\": \"1970-01-01T00:00:02.012+00:00\",\n                \"genero\": \"Fantastico\",\n                \"paginas\": 500,\n                \"autores\": [\n                    {\n                        \"id\": 1,\n                        \"nombre\": \"Paula\",\n                        \"apellido\": \"Rodriguez\",\n                        \"biografia\": \"Biografia de Romper Corazones\"\n                    }\n                ]\n            }\n        ]\n    }\n]"
+						},
+						{
+							"name": "search 2",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/v1/personas/search?filtro=Lucas",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"v1",
+										"personas",
+										"search"
+									],
+									"query": [
+										{
+											"key": "filtro",
+											"value": "Lucas"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 09 Oct 2023 01:19:47 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"nombre\": \"Lucas\",\n        \"apellido\": \"Pratto\",\n        \"dni\": 17421523,\n        \"domicilio\": {\n            \"id\": 2,\n            \"calle\": \"Catamarca\",\n            \"numero\": 232,\n            \"localidad\": {\n                \"id\": 1,\n                \"denominacion\": \"El vergel \"\n            }\n        },\n        \"libros\": [\n            {\n                \"id\": 1,\n                \"titulo\": \"Los dias del venado\",\n                \"fecha\": \"1970-01-01T00:00:02.012+00:00\",\n                \"genero\": \"Fantastico\",\n                \"paginas\": 500,\n                \"autores\": [\n                    {\n                        \"id\": 1,\n                        \"nombre\": \"Paula\",\n                        \"apellido\": \"Rodriguez\",\n                        \"biografia\": \"Biografia de Romper Corazones\"\n                    }\n                ]\n            }\n        ]\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get all Paged",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/v1/personas/paged?page=0&size=5&sort=id,asc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"personas",
+								"paged"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "5"
+								},
+								{
+									"key": "sort",
+									"value": "id,asc"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GetAllPaged",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/v1/personas/paged?page=0&size=5&sort=id,asc",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"v1",
+										"personas",
+										"paged"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "0"
+										},
+										{
+											"key": "size",
+											"value": "5"
+										},
+										{
+											"key": "sort",
+											"value": "id,asc"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 09 Oct 2023 02:14:08 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"content\": [\n        {\n            \"id\": 1,\n            \"nombre\": \"Lucas\",\n            \"apellido\": \"Pratto\",\n            \"dni\": 17421523,\n            \"domicilio\": {\n                \"id\": 2,\n                \"calle\": \"Catamarca\",\n                \"numero\": 232,\n                \"localidad\": {\n                    \"id\": 1,\n                    \"denominacion\": \"El vergel \"\n                }\n            },\n            \"libros\": [\n                {\n                    \"id\": 1,\n                    \"titulo\": \"Los dias del venado\",\n                    \"fecha\": \"1970-01-01T00:00:02.012+00:00\",\n                    \"genero\": \"Fantastico\",\n                    \"paginas\": 500,\n                    \"autores\": [\n                        {\n                            \"id\": 1,\n                            \"nombre\": \"Paula\",\n                            \"apellido\": \"Rodriguez\",\n                            \"biografia\": \"Biografia de Romper Corazones\"\n                        }\n                    ]\n                }\n            ]\n        }\n    ],\n    \"pageable\": {\n        \"pageNumber\": 0,\n        \"pageSize\": 5,\n        \"sort\": {\n            \"empty\": false,\n            \"unsorted\": false,\n            \"sorted\": true\n        },\n        \"offset\": 0,\n        \"paged\": true,\n        \"unpaged\": false\n    },\n    \"last\": true,\n    \"totalElements\": 1,\n    \"totalPages\": 1,\n    \"size\": 5,\n    \"number\": 0,\n    \"sort\": {\n        \"empty\": false,\n        \"unsorted\": false,\n        \"sorted\": true\n    },\n    \"first\": true,\n    \"numberOfElements\": 1,\n    \"empty\": false\n}"
+						}
+					]
+				},
+				{
+					"name": "SEARCH Paged",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/v1/personas/searchPaged?filtro=Lucas&page=0&size=5&sort=id,desc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"personas",
+								"searchPaged"
+							],
+							"query": [
+								{
+									"key": "filtro",
+									"value": "Lucas"
+								},
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "5"
+								},
+								{
+									"key": "sort",
+									"value": "id,desc"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "SearchPaged",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/v1/personas/searchPaged?filtro=Lucas&page=0&size=5&sort=id,desc",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"v1",
+										"personas",
+										"searchPaged"
+									],
+									"query": [
+										{
+											"key": "filtro",
+											"value": "Lucas"
+										},
+										{
+											"key": "page",
+											"value": "0"
+										},
+										{
+											"key": "size",
+											"value": "5"
+										},
+										{
+											"key": "sort",
+											"value": "id,desc"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 09 Oct 2023 02:17:03 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"content\": [\n        {\n            \"id\": 1,\n            \"nombre\": \"Lucas\",\n            \"apellido\": \"Pratto\",\n            \"dni\": 17421523,\n            \"domicilio\": {\n                \"id\": 2,\n                \"calle\": \"Catamarca\",\n                \"numero\": 232,\n                \"localidad\": {\n                    \"id\": 1,\n                    \"denominacion\": \"El vergel \"\n                }\n            },\n            \"libros\": [\n                {\n                    \"id\": 1,\n                    \"titulo\": \"Los dias del venado\",\n                    \"fecha\": \"1970-01-01T00:00:02.012+00:00\",\n                    \"genero\": \"Fantastico\",\n                    \"paginas\": 500,\n                    \"autores\": [\n                        {\n                            \"id\": 1,\n                            \"nombre\": \"Paula\",\n                            \"apellido\": \"Rodriguez\",\n                            \"biografia\": \"Biografia de Romper Corazones\"\n                        }\n                    ]\n                }\n            ]\n        }\n    ],\n    \"pageable\": {\n        \"pageNumber\": 0,\n        \"pageSize\": 5,\n        \"sort\": {\n            \"empty\": false,\n            \"unsorted\": false,\n            \"sorted\": true\n        },\n        \"offset\": 0,\n        \"paged\": true,\n        \"unpaged\": false\n    },\n    \"last\": true,\n    \"totalElements\": 1,\n    \"totalPages\": 1,\n    \"size\": 5,\n    \"number\": 0,\n    \"sort\": {\n        \"empty\": false,\n        \"unsorted\": false,\n        \"sorted\": true\n    },\n    \"first\": true,\n    \"numberOfElements\": 1,\n    \"empty\": false\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Localidades",
+			"item": [
+				{
+					"name": "Get all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/v1/localidades",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"localidades"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get all",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/v1/localidades",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"v1",
+										"localidades"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 08 Oct 2023 23:16:01 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"denominacion\": \"La Pega\"\n    },\n    {\n        \"id\": 2,\n        \"denominacion\": \"El vergel \"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get one",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/v1/localidades/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"localidades",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get one",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/v1/localidades/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"v1",
+										"localidades",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 08 Oct 2023 23:14:52 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"denominacion\": \"La Pega\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \r\n        \"denominacion\": \"El vergel \"\r\n    }"
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/v1/localidades",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"localidades"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": " {\r\n        \r\n        \"denominacion\": \"La Pega\"\r\n    }"
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/v1/localidades",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"v1",
+										"localidades"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 04 Oct 2023 19:40:47 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"denominacion\": \"La Pega\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"id\": 2,\r\n        \"denominacion\": \"El Vergel \"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/v1/localidades/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"localidades",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": " {\r\n        \"id\": 2,\r\n        \"denominacion\": \"El Vergel \"\r\n}"
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/v1/localidades/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"v1",
+										"localidades",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 04 Oct 2023 20:52:07 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"denominacion\": \"El Vergel \"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/v1/localidades/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"localidades",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/v1/localidades/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"v1",
+										"localidades",
+										"1"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 08 Oct 2023 23:17:22 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Autores",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/v1/autores",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"autores"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/v1/autores",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"v1",
+										"autores"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 04 Oct 2023 19:43:25 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"nombre\": \"JK\",\n        \"apellido\": \"Rowlling\",\n        \"biografia\": \"Biografia de Harry Potter\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get one",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/v1/autores/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"autores",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get one",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/v1/autores/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"v1",
+										"autores",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 08 Oct 2023 23:24:09 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"nombre\": \"Paula\",\n    \"apellido\": \"Rodriguez\",\n    \"biografia\": \"Biografia de Romper Corazones\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \r\n        \"nombre\": \"Paula\",\r\n        \"apellido\": \"Rodriguez\",\r\n        \"biografia\": \"Biografia de Romper Corazones\"\r\n    }"
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/v1/autores",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"autores"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "  {\r\n        \r\n        \"nombre\": \"Paula\",\r\n        \"apellido\": \"Rodriguez\",\r\n        \"biografia\": \"Biografia de Romper Corazones\"\r\n    }"
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/v1/autores",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"v1",
+										"autores"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 04 Oct 2023 19:44:42 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"nombre\": \"Paula\",\n    \"apellido\": \"Rodriguez\",\n    \"biografia\": \"Biografia de nacimiento y biografia de autor\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"id\": 1,\r\n        \"nombre\": \"Elsa\",\r\n        \"apellido\": \"Rodriguez\",\r\n        \"biografia\": \"Biografia de Romper Corazones\"\r\n    } "
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/v1/autores/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"autores",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "  {\r\n        \"id\": 1,\r\n        \"nombre\": \"Elsa\",\r\n        \"apellido\": \"Rodriguez\",\r\n        \"biografia\": \"Biografia de Romper Corazones\"\r\n    } "
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/v1/autores/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"v1",
+										"autores",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 08 Oct 2023 23:21:50 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"nombre\": \"Elsa\",\n    \"apellido\": \"Rodriguez\",\n    \"biografia\": \"Biografia de Romper Corazones\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/v1/autores/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"autores",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/v1/autores/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"v1",
+										"autores",
+										"1"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 08 Oct 2023 23:22:55 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		}
+	]
+}
